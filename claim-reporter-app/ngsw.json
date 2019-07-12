@@ -1,0 +1,83 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.f09221edd72ec0dd0da9.js",
+        "/polyfills.b4daf421c94934f530d4.js",
+        "/runtime.a66f828dca56eeb90e02.js",
+        "/styles.34c57ab7888ec1573f9c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "car-info-api",
+      "patterns": [
+        "https:\\/\\/www\\.carqueryapi\\.com\\/api\\/0\\.3\\/"
+      ],
+      "strategy": "freshness",
+      "maxSize": 10000,
+      "maxAge": 21600000,
+      "timeoutMs": 5000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "e4d1a70b062e8ae0a9683a8c5b4608ece60bd2bf",
+    "/assets/icons/icon-152x152.png": "558b19812c25920f99b57c49700883e2b2b68b75",
+    "/assets/icons/icon-192x192.png": "b70d6ee44f1252048bba9b8a30647e3ba8a63c72",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "08c7a1240a6264121ea9086e56d51cb9536aa912",
+    "/assets/icons/icon-72x72.png": "5ced24a1de6e831df0cb1dbd8de72db24945ff12",
+    "/assets/icons/icon-96x96.png": "0a51839e5056249b26d5267cedc49f89e72d722e",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "8bb4be962f4f30d06d49fe485fa639df8f83ab94",
+    "/main.f09221edd72ec0dd0da9.js": "a690ec825042dbcdbcf36677fc7426ec26e6465c",
+    "/polyfills.b4daf421c94934f530d4.js": "193f6d7b77c2bce633da2f543082303b4f32d7ed",
+    "/runtime.a66f828dca56eeb90e02.js": "078e320cc6fdaf355836c3b1c52b059cdd33fc7e",
+    "/styles.34c57ab7888ec1573f9c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*\\.[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^\\/]*__[^\\/]*\\/.*$"
+    }
+  ]
+}
